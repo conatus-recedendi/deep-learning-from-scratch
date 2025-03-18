@@ -53,7 +53,7 @@ network = MultiLayerNetExtend(
     output_size=10,
     use_dropout=use_dropout,
     dropout_ration=dropout_ratio,
-    weight_decay_lambda=0.1,
+    weight_decay_lambda=0.0,
 )
 
 trainer = Trainer(
