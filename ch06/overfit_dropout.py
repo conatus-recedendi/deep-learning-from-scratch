@@ -39,8 +39,8 @@ wandb.init(project="DILab - scratch 1", config=wandb_sweep_config)
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
 
 # 오버피팅을 재현하기 위해 학습 데이터 수를 줄임
-x_train = x_train[:300]
-t_train = t_train[:300]
+x_train = x_train
+t_train = t_train
 
 # 드롭아웃 사용 유무와 비율 설정 ========================
 use_dropout = True  # 드롭아웃을 쓰지 않을 때는 False
